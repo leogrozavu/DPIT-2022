@@ -175,7 +175,7 @@ app.get("/message", (req,res) => {
 
 const startConnection = async() => {
     try {
-        await dbConnection("mongodb+srv://leo:mongo123@r-services.ulww9.mongodb.net/INFO?retryWrites=true&w=majority")
+        await dbConnection("mongodb")
         http.listen(port, () => {
             console.log(`Listening on port ${port}`);
         })
